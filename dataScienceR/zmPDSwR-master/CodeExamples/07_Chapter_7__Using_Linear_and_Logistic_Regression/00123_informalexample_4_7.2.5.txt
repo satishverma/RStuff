@@ -1,0 +1,27 @@
+# informalexample:4_7.2.5 
+# informalexample:4 : Chapter 7: Using Linear and Logistic Regression : Using Logistic Regression : Reading the Model Summary and Characterizing Coefficients 
+
+pred <- predict(model, newdata=train, type="response") 	# Note: 1 
+llcomponents <- function(y, py) {                      	# Note: 2 
+  y*log(py) + (1-y)*log(1-py)
+}
+
+edev <- sign(as.numeric(train$atRisk) - pred) *        	# Note: 3 
+  sqrt(-2*llcomponents(as.numeric(train$atRisk), pred))
+
+> summary(edev)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+-0.9732 -0.1818 -0.1511 -0.1244 -0.1358  3.2640
+                                        
+
+# Note 1: 
+#   Create the vector of predictions for the 
+#   training data. 
+
+# Note 2: 
+#   A function to return the log-likelihoods for 
+#   each data point. The argument y is the true outcome (as a numeric 
+#   variable, 0/1), the argument py is the predicted probability. 
+
+# Note 3: 
+#   Calculate the deviance residuals. 

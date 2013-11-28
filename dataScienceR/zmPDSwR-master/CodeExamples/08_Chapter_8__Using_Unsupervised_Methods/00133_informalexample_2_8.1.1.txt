@@ -1,0 +1,5 @@
+# informalexample:2_8.1.1 
+# informalexample:2 : Chapter 8: Using Unsupervised Methods : Cluster Analysis : Distances 
+
+hdist(x, y) <- sum((x[1] != y[1]) + (x[2] != y[2]) + ...)
+                                

@@ -1,0 +1,6 @@
+# informalexample:1_5.2.3 
+# informalexample:1 : Chapter 5: Choosing and Evaluating Models : Evaluating Models : Evaluating Probability Models 
+
+ggplot(data=spamTest) +
+   geom_density(aes(x=pred,color=spam,linetype=spam))
+                        

@@ -1,0 +1,5 @@
+# informalexample:5_7.1.5 
+# informalexample:5 : Chapter 7: Using Linear and Logistic Regression : Using Linear Regression : Reading the model summary and Characterizing coefficient quality 
+
+   df <- dim(dtrain)[1] - dim(summary(model)$coefficients)[1]
+

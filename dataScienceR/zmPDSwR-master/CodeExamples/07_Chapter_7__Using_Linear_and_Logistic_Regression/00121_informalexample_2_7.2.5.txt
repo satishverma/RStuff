@@ -1,0 +1,6 @@
+# informalexample:2_7.2.5 
+# informalexample:2 : Chapter 7: Using Linear and Logistic Regression : Using Logistic Regression : Reading the Model Summary and Characterizing Coefficients 
+
+Call:
+glm(formula = fmla, family = binomial(link = "logit"), data = train)
+                                        

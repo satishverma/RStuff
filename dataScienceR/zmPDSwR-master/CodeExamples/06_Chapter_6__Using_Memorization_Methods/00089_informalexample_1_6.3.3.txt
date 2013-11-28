@@ -1,0 +1,8 @@
+# informalexample:1_6.3.3 
+# informalexample:1 : Chapter 6: Using Memorization Methods : Building Models Using Many Variables : Using Nearest Neighbor Methods 
+
+dCal$kpred <- knnPred(dCal[,selVars])
+ggplot(data=dCal) +
+   geom_density(aes(x=kpred,
+      color=as.factor(churn),linetype=as.factor(churn)))
+                

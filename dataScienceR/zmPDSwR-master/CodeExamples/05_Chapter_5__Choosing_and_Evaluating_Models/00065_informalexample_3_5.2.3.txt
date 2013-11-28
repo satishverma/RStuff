@@ -1,0 +1,12 @@
+# informalexample:3_5.2.3 
+# informalexample:3 : Chapter 5: Choosing and Evaluating Models : Evaluating Models : Evaluating Probability Models 
+
+> sum(ifelse(spamTest$spam=='spam',
+   log(spamTest$pred),
+   log(1-spamTest$pred)))
+[1] -134.9478
+> sum(ifelse(spamTest$spam=='spam',
+   log(spamTest$pred),
+   log(1-spamTest$pred)))/dim(spamTest)[[1]]
+[1] -0.2946458
+                                

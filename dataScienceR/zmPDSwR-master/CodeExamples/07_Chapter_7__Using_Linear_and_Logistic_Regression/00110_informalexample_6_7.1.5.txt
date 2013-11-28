@@ -1,0 +1,5 @@
+# informalexample:6_7.1.5 
+# informalexample:6 : Chapter 7: Using Linear and Logistic Regression : Using Linear Regression : Reading the model summary and Characterizing coefficient quality 
+
+   modelResidualError <- sqrt(sum(residuals(model)^2)/df)
+

@@ -1,0 +1,5 @@
+# informalexample:10_8.2.3 
+# informalexample:10 : Chapter 8: Using Unsupervised Methods : Association Rules : Mining Association Rules with the arules package. 
+
+inspect(head((sort(rules, by="confidence")), n=5))
+                                        

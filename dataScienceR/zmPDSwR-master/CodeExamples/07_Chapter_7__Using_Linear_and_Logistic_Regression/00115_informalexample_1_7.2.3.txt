@@ -1,0 +1,6 @@
+# informalexample:1_7.2.3 
+# informalexample:1 : Chapter 7: Using Linear and Logistic Regression : Using Logistic Regression : Making Predictions 
+
+train$pred <- predict(model, newdata=train, type="response")
+test$pred <- predict(model, newdata=test, type="response")
+

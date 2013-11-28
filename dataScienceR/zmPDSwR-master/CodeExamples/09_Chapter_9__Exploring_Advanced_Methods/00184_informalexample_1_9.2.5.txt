@@ -1,0 +1,4 @@
+# informalexample:1_9.2.5 
+# informalexample:1 : Chapter 9: Exploring Advanced Methods : Using Generalized Additive Models (GAMs) to learn non-monotone relationships : Using GAM for Logistic Regression 
+form <- as.formula("DBWT < 2000 ~ PWGT + WTGAIN + MAGER + UPREVIS")
+logmod <- glm(form, data=train, family=binomial(link="logit"))

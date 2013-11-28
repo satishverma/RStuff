@@ -1,0 +1,8 @@
+# informalexample:10_7.2.5 
+# informalexample:10 : Chapter 7: Using Linear and Logistic Regression : Using Logistic Regression : Reading the Model Summary and Characterizing Coefficients 
+
+aic <- 2*(length(model$coefficients) -
+         loglikelihood(as.numeric(train$atRisk), pred))
+> aic
+[1] 2490.992
+                                        

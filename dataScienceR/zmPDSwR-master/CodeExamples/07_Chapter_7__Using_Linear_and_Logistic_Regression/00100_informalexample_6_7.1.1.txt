@@ -1,0 +1,10 @@
+# informalexample:6_7.1.1 
+# informalexample:6 : Chapter 7: Using Linear and Logistic Regression : Using Linear Regression : Understanding linear regression 
+
+load("psub.RData")
+dtrain <- subset(psub,ORIGINRANDGROUP >= 500)
+dtest <- subset(psub,ORIGINRANDGROUP < 500)
+model <- lm(log(PINCP,base=10) ~ AGEP + SEX + COW + SCHL,data=dtrain)
+dtest$predLogPINCP <- predict(model,newdata=dtest)
+dtrain$predLogPINCP <- predict(model,newdata=dtrain)
+                        

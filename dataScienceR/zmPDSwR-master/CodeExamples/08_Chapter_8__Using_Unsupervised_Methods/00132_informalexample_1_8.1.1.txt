@@ -1,0 +1,5 @@
+# informalexample:1_8.1.1 
+# informalexample:1 : Chapter 8: Using Unsupervised Methods : Cluster Analysis : Distances 
+
+edist(x, y) <- sqrt((x[1]-y[1])^2 + (x[2]-y[2])^2 + ...)
+                                

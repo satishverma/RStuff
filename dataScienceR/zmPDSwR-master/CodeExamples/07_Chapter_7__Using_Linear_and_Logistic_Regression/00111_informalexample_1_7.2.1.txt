@@ -1,0 +1,5 @@
+# informalexample:1_7.2.1 
+# informalexample:1 : Chapter 7: Using Linear and Logistic Regression : Using Logistic Regression : Understanding logistic regression 
+
+  f(x[i,]) = s(b[1] x[i,1] + b[2] x[i,2] + ... b[n] x[i,n]).
+

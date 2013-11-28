@@ -1,0 +1,5 @@
+# informalexample:1_7.1.1 
+# informalexample:1 : Chapter 7: Using Linear and Logistic Regression : Using Linear Regression : Understanding linear regression 
+
+pounds.lost[i] = b.cals * daily.cals[i] + b.exercise * daily.exercise[i]
+        

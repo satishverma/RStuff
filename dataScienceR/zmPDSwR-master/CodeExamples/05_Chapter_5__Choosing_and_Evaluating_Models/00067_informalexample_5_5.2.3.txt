@@ -1,0 +1,36 @@
+# informalexample:5_5.2.3 
+# informalexample:5 : Chapter 5: Choosing and Evaluating Models : Evaluating Models : Evaluating Probability Models 
+
+> entropy <- function(x) { 	# Note: 1 
+    xpos <- x[x>0]
+    scaled <- xpos/sum(xpos)
+    sum(-scaled*log(scaled,2))
+  }
+
+> print(entropy(table(spamTest$spam))) 	# Note: 2 
+[1] 0.9667165
+
+> conditionalEntropy <- function(t) { 	# Note: 3 
+    (sum(t[,1])*entropy(t[,1]) + sum(t[,2])*entropy(t[,2]))/sum(t)
+  }
+
+> print(conditionalEntropy(cM)) 	# Note: 4 
+[1] 0.3971897
+                                
+
+# Note 1: 
+#   Define a function that computes the entropy 
+#   from a list of outcome counts. 
+
+# Note 2: 
+#   Calculate the entropy of the spam/non-spam 
+#   distribution. 
+
+# Note 3: 
+#   Function to calculate conditional or 
+#   remaining entropy of the spam distribution (rows) given the prediction 
+#   (columns). 
+
+# Note 4: 
+#   Calculate the conditional or remaining 
+#   entropy of the spam distribution given the prediction. 

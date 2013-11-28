@@ -1,0 +1,6 @@
+# informalexample:7_A.2.1 
+# informalexample:7 : Working with R And Other Tools : Starting with R : Primary Features of R 
+
+> add(1,'fred')
+Error in a + b : non-numeric argument to binary operator
+                        

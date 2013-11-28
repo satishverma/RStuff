@@ -1,0 +1,7 @@
+# informalexample:4_7.1.3 
+# informalexample:4 : Chapter 7: Using Linear and Logistic Regression : Using Linear Regression : Making predictions 
+
+rmse <- function(y, f) { sqrt(mean( (y-f)^2 )) }
+rmse(log(dtrain$PINCP,base=10),predict(model,newdata=dtrain))
+rmse(log(dtest$PINCP,base=10),predict(model,newdata=dtest))
+

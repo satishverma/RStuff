@@ -1,0 +1,8 @@
+# informalexample:3_5.2.5 
+# informalexample:3 : Chapter 5: Choosing and Evaluating Models : Evaluating Models : Evaluating Clustering Models 
+
+> table(d$cluster)
+
+ 1  2  3  4  5
+10 27 18 17 28
+                        

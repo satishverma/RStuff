@@ -1,0 +1,5 @@
+# informalexample:3_8.1.1 
+# informalexample:3 : Chapter 8: Using Unsupervised Methods : Cluster Analysis : Distances 
+
+mdist(x, y) <- sum(abs(x[1]-y[1]) + abs(x[2]-y[2]) + ...)
+                                

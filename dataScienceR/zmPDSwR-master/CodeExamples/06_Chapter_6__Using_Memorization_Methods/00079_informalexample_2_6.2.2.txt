@@ -1,0 +1,6 @@
+# informalexample:2_6.2.2 
+# informalexample:2 : Chapter 6: Using Memorization Methods : Building Single Variable Models : Using numeric features 
+
+ggplot(data=dCal) +
+   geom_density(aes(x=predVar126,color=as.factor(churn)))
+                        

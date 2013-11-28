@@ -1,0 +1,12 @@
+# informalexample:2_6.2.3 
+# informalexample:2 : Chapter 6: Using Memorization Methods : Building Single Variable Models : Using Cross-Validation to Estimate Effects of Overfitting 
+
+> fCross <- function() {
+   useForCalRep <- rbinom(n=dim(dTrainAll)[[1]],size=1,prob=0.1)>0
+   predRep <- mkPredC(dTrainAll[!useForCalRep,outcome],
+      dTrainAll[!useForCalRep,var],
+      dTrainAll[useForCalRep,var])
+   calcAUC(predRep,dTrainAll[useForCalRep,outcome])
+}
+> aucs <- replicate(100,fCross())
+                        

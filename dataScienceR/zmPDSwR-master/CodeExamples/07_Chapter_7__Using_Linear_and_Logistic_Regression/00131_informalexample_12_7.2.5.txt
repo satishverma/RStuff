@@ -1,0 +1,6 @@
+# informalexample:12_7.2.5 
+# informalexample:12 : Chapter 7: Using Linear and Logistic Regression : Using Logistic Regression : Reading the Model Summary and Characterizing Coefficients 
+
+Warning message:
+glm.fit: fitted probabilities numerically 0 or 1 occurred
+                                        

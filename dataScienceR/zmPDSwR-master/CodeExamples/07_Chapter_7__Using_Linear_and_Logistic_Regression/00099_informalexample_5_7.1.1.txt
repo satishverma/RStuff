@@ -1,0 +1,5 @@
+# informalexample:5_7.1.1 
+# informalexample:5 : Chapter 7: Using Linear and Logistic Regression : Using Linear Regression : Understanding linear regression 
+
+  x[i]^2  nearly equals -22 + 11 x[i] .
+

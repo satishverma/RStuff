@@ -1,0 +1,5 @@
+# informalexample:4_7.1.1 
+# informalexample:4 : Chapter 7: Using Linear and Logistic Regression : Using Linear Regression : Understanding linear regression 
+
+  x[i]^2  nearly equals b[0] + b[1] x[i] .
+
