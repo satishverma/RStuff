@@ -1,0 +1,3 @@
+
+library(gam)
+help(gam)
